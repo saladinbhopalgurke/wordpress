@@ -1,0 +1,100 @@
+/*
+ Theme Name:   Chromatheme
+ Theme URI:    https://afthemes.com/products/daily-newscast/
+ Description:  Daily Newscast Child Theme
+ Author:       John Doe
+ Author URI:   
+ Template:     covernews
+ Version:      1.0.1
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         
+ Text Domain:  chromatheme
+*/
+
+.main-navigation {
+    background: #0A2360;
+}
+
+.exclusive-posts .exclusive-now {
+	 background: #0A2360;
+}
+
+.trending-no {
+    background: #0A2360;
+}
+
+.trending-story .grid-item-metadata .posts-author a:hover{
+    color: #0A2360;
+}
+
+.secondary-color,
+button, input[type="button"], input[type="reset"], input[type="submit"],
+.site-content .search-form .search-submit,
+.site-footer .search-form .search-submit,
+.tagcloud a:hover,
+.tagcloud a:hover {
+    background: #0A2360;
+}
+
+span.header-after:after {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    width: 60px;
+    height: 3px;
+    background: #0A2360;
+}
+
+.full-plus-list .spotlight-post:first-of-type .figure-categories .cat-links a.covernews-categories,
+.figure-categories .cat-links a.covernews-categories {
+    line-height: 1;
+    padding: 3px 6px;
+    margin-right: 5px;
+    color: #fff;
+    background-color: #0A2360;
+    border-radius: 0px;
+    display: inline-block;
+    font-weight: bold;
+    opacity: 1;
+}
+
+.covernews_tabbed_posts_widget .figure-categories .cat-links a.covernews-categories,
+.list .spotlight-post .figure-categories .cat-links a.covernews-categories ,
+.full-plus-list .spotlight-post .figure-categories .cat-links a.covernews-categories ,
+.trending-posts-vertical-carousel .figure-categories .cat-links a.covernews-categories ,
+.trending-story .figure-categories .cat-links a.covernews-categories {
+    padding:0;
+    color: #0A2360;
+    background-color: transparent;
+    opacity: 0.9;
+    transition: all 0.5s ease-out;
+}
+
+span.trending-no {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #0A2360;
+    padding: 0px 10px;
+    color: #ffff;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#secondary .widget-title span:after{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    width: 60px;
+    height: 3px;
+    background: #0A2360;
+}
+
+.post-thumbnail img {
+    width: 50%;
+    float: left;
+    padding-right: 20px;
+}
