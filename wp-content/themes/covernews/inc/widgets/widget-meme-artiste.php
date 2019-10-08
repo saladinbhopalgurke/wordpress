@@ -37,30 +37,13 @@ if (!class_exists('CoverNews_Meme_Artiste')) :
         {
             $instance = parent::covernews_sanitize_data($instance, $instance);
 
-// mes modifs
-$artiste = get_field('artiste');
-function example_callback( $artiste, $arg1, $arg2 ) {
-    // (maybe) modify $string
-    return $artiste;
-}
-add_filter( 'example_filter', 'example_callback', 10, 3 );
-
-/*
- * Apply the filters by calling the 'example_callback' function we
- * "hooked" to 'example_filter' using the add_filter() function above.
- * - 'example_filter' is the filter hook $tag
- * - 'filter me' is the value being filtered
- * - $arg1 and $arg2 are the additional arguments passed to the callback. */
-$artiste = apply_filters( 'example_filter', 'filter me', $arg1, $arg2 );
-
-// fin de mes modifs https://developer.wordpress.org/reference/functions/apply_filters/
-
             /** This filter is documented in wp-includes/default-widgets.php */
+
             $title = apply_filters('widget_title', $instance['covernews-posts-slider-title'], $instance, $this->id_base);
             $category = isset($instance['covernews-select-category']) ? $instance['covernews-select-category'] : 0;
             $show_excerpt = 'true';
             $excerpt_length = '25';
-            $number_of_posts = 5;
+            $number_of_posts = 3;
 
             // open the widget container
             echo $args['before_widget'];
@@ -77,8 +60,7 @@ $artiste = apply_filters( 'example_filter', 'filter me', $arg1, $arg2 );
             </div>
         <?php endif; ?>
             <?php
-
-            $all_posts = covernews_get_posts($number_of_posts, $category);
+            $all_posts = get_artiste($number_of_posts, $category);
             ?>
             <div class="posts-slider">
                 <?php

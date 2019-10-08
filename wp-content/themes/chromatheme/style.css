@@ -24,6 +24,66 @@
     background: #0A2360;
 }
 
+.site-description {
+	width: 200%;
+}
+
+/* polices */
+
+.post-excerpt {
+	font-size: 14px !important;
+}
+
+.entry-content-wrap {
+	font-size: 14px !important;
+}
+
+.entry-title {
+	font-size: 24px !important;
+}
+
+.entry-header-details {
+	font-size: 14px !important;
+}
+
+h1,
+.h1 {
+  font-size: 25px;
+}
+h2,
+.h2 {
+  font-size: 22px;
+}
+h3,
+.h3 {
+  font-size: 18px;
+}
+h4,
+.h4 {
+  font-size: 14px;
+}
+h5,
+.h5 {
+  font-size: 12px;
+}
+h6,
+.h6 {
+  font-size: 10px;
+}
+h1, h2, h3, h4, h5, h6 {
+    clear: none;
+    color: #000000;
+    font-weight: 700;
+}
+
+/*padding sur les images */
+
+.post-thumbnail img{
+margin-right: 20px;
+padding-right: 0 !important;
+border-radius: 5px;
+}
+
 .trending-story .grid-item-metadata .posts-author a:hover{
     color: #0A2360;
 }
@@ -46,6 +106,8 @@ span.header-after:after {
     height: 3px;
     background: #0A2360;
 }
+
+/* couleurs */
 
 .full-plus-list .spotlight-post:first-of-type .figure-categories .cat-links a.covernews-categories,
 .figure-categories .cat-links a.covernews-categories {
@@ -70,6 +132,38 @@ span.header-after:after {
     background-color: transparent;
     opacity: 0.9;
     transition: all 0.5s ease-out;
+}
+
+
+.figure-categories .cat-links a.category-color-2,
+.full-plus-list .spotlight-post:first-of-type .figure-categories .cat-links a.covernews-categories.category-color-2
+{
+
+    background-color: #DF0101;
+}
+
+.trending-story .figure-categories .cat-links a.covernews-categories.category-color-2,
+.list .spotlight-post .figure-categories .cat-links a.covernews-categories.category-color-2,
+.full-plus-list .spotlight-post .figure-categories .cat-links a.covernews-categories.category-color-2,
+.covernews_tabbed_posts_widget .figure-categories .cat-links a.covernews-categories.category-color-2,
+.trending-posts-vertical-carousel .figure-categories .cat-links a.covernews-categories.category-color-2
+{
+    color: #DF0101;
+}
+
+.figure-categories .cat-links a.category-color-3,
+.full-plus-list .spotlight-post:first-of-type .figure-categories .cat-links a.covernews-categories.category-color-3
+{
+    background-color: #FFBF00;
+}
+
+.trending-story .figure-categories .cat-links a.covernews-categories.category-color-3,
+.list .spotlight-post .figure-categories .cat-links a.covernews-categories.category-color-3,
+.full-plus-list .spotlight-post .figure-categories .cat-links a.covernews-categories.category-color-3,
+.covernews_tabbed_posts_widget .figure-categories .cat-links a.covernews-categories.category-color-3,
+.trending-posts-vertical-carousel .figure-categories .cat-links a.covernews-categories.category-color-3
+{
+    color: #FFBF00;
 }
 
 span.trending-no {

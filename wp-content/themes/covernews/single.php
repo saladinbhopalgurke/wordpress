@@ -5,7 +5,7 @@
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
  * @package CoverNews
- */
+ *
 
 get_header(); ?>
         <div class="row">

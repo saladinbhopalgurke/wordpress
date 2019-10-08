@@ -26,7 +26,36 @@ if(!function_exists('covernews_get_posts')):
     }
 
 endif;
+// début des modifs
 
+
+
+
+
+if(!function_exists('get_artiste')):
+    function get_artiste($number_of_posts, $category = '0'){
+
+    $ins_args = array(
+            'post_type' => 'post',
+            'posts_per_page' => absint($number_of_posts),            
+            'post_status' => 'publish',
+            'orderby' => 'date',
+            'order' => 'DESC',
+            'meta_key' => 'artiste',
+            'meta_value' => get_field( "artiste" )
+        );
+
+
+        if (absint($category) > 0) {
+            $ins_args['cat'] = absint($category);
+        }
+
+        $all_posts = new WP_Query($ins_args);
+        return $all_posts;
+    }
+
+endif;
+//fin des modifs
 
 /**
  * Returns all categories.
